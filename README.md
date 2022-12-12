@@ -23,6 +23,37 @@ npx prettier '**/*.{json,sol,md}' --check
 npx prettier '**/*.{json,sol,md}' --write
 npx solhint 'contracts/**/*.sol'
 npx solhint 'contracts/**/*.sol' --fix
+
+
+npx hardhat getTokenBalance --network localhost --token-contract 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
+
+npx hardhat stake  --network localhost --token-contract 0xa513E6E4b8f2a923D98304ec87F64353C4D5C853  --token-ids 1 
+
+npx hardhat unstake  --network localhost --token-contract 0xa513E6E4b8f2a923D98304ec87F64353C4D5C853 --token-ids 1 
+
+npx hardhat claim   --network localhost --token-contract 0xa513E6E4b8f2a923D98304ec87F64353C4D5C853   
+
+npx hardhat getNFTBalance --network localhost --nft-contract 0x0165878A594ca255338adfa4d48449f69242Eb8F 
+
+npx hardhat getTokenBalance --network localhost --token-contract 0xa513E6E4b8f2a923D98304ec87F64353C4D5C853
+ 
+
+npx hardhat stake  --network localhost --token-contract 0xa513E6E4b8f2a923D98304ec87F64353C4D5C853 --token-ids 1,2
+ 
+ 
+npx hardhat getNFTBalance --network localhost --nft-contract 0x0165878A594ca255338adfa4d48449f69242Eb8F    
+ 
+
+npx hardhat unstake  --network localhost --token-contract 0xa513E6E4b8f2a923D98304ec87F64353C4D5C853 --token-ids 2 
+
+npx hardhat getNFTBalance --network localhost --nft-contract 0x0165878A594ca255338adfa4d48449f69242Eb8F 
+
+npx hardhat getTokenBalance --network localhost --token-contract  
+
+npx hardhat claim   --network localhost --token-contract  
+ 
+npx hardhat getTokenBalance --network localhost --token-contract 0xa513E6E4b8f2a923D98304ec87F64353C4D5C853
+ 
 ```
 
 # Etherscan verification
